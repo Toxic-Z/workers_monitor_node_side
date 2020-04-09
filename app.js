@@ -3,11 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var employeeSch = require('./schemas/employee.js');
-
 const mongoose = require("mongoose");
-
-mongoose.connect("mongodb://localhost:27017/db", { useNewUrlParser: true }, function (err) {
+mongoose.connect("mongodb://localhost:27017/db", { useNewUrlParser: true, useUnifiedTopology: true }, function (err) {
   if(err) return console.log(err);
   app.listen(3000, function() {
     console.log("Server is listening on port 3000...");

@@ -4,8 +4,8 @@ const employeeSchema = new Schema({
     name: {
         type: String,
         required: true,
-        minlength:6,
-        maxlength:30
+        minlength:3,
+        maxlength:20
     },
     gender:  {
         type: String,
@@ -25,7 +25,7 @@ const employeeSchema = new Schema({
                 street: {
                     type: String,
                     required: true,
-                    minlength: 3,
+                    minlength: 1,
                     maxlength: 20
                 },
                 houseN: {
@@ -47,7 +47,7 @@ const employeeSchema = new Schema({
             type: String,
             required: true,
             minlength: 6,
-            maxlength: 20
+            maxlength: 30
         }
     },
     addDate: {
