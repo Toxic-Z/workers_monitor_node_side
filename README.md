@@ -7,5 +7,6 @@ REQUIREMENTS:
 4. Execute "node app.js" in the root directory of this application.
 5. Execute "npm run start" in the root directory of front-end application.
 6. Enjoy my work, please :) 
+
 Incoming features: 
 - adding authorization token to requests
