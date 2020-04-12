@@ -16,7 +16,7 @@ const checkJwt = jwt({
         cache: true,
         rateLimit: true,
         jwksRequestsPerMinute: 5,
-        jwksUri: `http://${authConfig.domain}/.well-known/jwks.json`,
+        jwksUri: `https://${authConfig.domain}/.well-known/jwks.json`,
     }),
     issuer: `https://${authConfig.domain}/`,
     audience: authConfig.audience,
